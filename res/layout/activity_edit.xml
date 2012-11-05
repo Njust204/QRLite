@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:gravity="center" >
+        
+        <EditText 
+            android:id="@+id/keyToEditET"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dip"
+            android:layout_weight="1"
+            android:hint="请输入待查键值"/>
+        
+        <Button 
+            android:id="@+id/searchItem2EditBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dip"
+            android:layout_weight="1"
+            android:text="查询待改条目"/>
+        
+        <ScrollView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_marginBottom="3dip"
+            android:layout_weight="10">
+            <EditText
+           	 	android:id="@+id/valueToEditET"
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent"
+            	android:hint="待改内容"/>
+        </ScrollView>
+        
+         <Button 
+            android:id="@+id/pickItemPicBtn_inEditAct"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dip"
+            android:layout_weight="1"
+            android:text="拍照"
+            android:visibility="invisible"/>
+        <Button 
+            android:id="@+id/editItemBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_weight="1"
+            android:text="编辑条目"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+</RelativeLayout>
+

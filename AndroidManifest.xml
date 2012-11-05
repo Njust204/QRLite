@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.demo.qrlite"
+    android:versionCode="1"
+    android:versionName="1.0" 
+    android:installLocation="auto">
+
+    <uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <supports-screens
+                    android:largeScreens="true"
+                    android:normalScreens="true"
+                    android:smallScreens="true"
+                    android:anyDensity="true"/>
+    
+    <uses-feature android:name="android.hardware.camera"/>
+    
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main">
+            
+        </activity>
+        
+        <activity 
+            android:name=".AddActivity"
+            android:label="@string/title_activity_add">
+            
+        </activity>
+        
+        <activity 
+            android:name=".DeleteActivity"
+            android:label="@string/title_activity_delete">
+            
+        </activity>
+        
+        <activity 
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search">
+            
+        </activity>
+        
+        <activity 
+            android:name=".EditActivity"
+            android:label="@string/title_activity_edit">
+            
+        </activity>
+        
+        <activity 
+            android:name=".AllActivity"
+            android:label="@string/title_activity_all">
+            
+        </activity>
+        
+        <activity 
+            android:name=".PickPicActivity"
+            android:label="@string/title_activity_pickpic"
+            android:screenOrientation="landscape">
+            
+        </activity>
+        
+    </application>
+
+</manifest>

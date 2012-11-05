@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:gravity="center" >
+        
+        <EditText 
+            android:id="@+id/keyToSearchET"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dip"
+            android:hint="请输入待查键值"/>
+        
+          <TextView 
+           	 	android:id="@+id/groupSearchShowTV"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_gravity="center_horizontal"
+            	android:gravity="center"
+            	android:layout_margin="3dip"/>
+          
+        <ScrollView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_marginBottom="3dip"
+            android:layout_weight="5">
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="fill_horizontal">
+            	<TextView 
+           	 		android:id="@+id/valueToShowTV"
+            		android:layout_width="fill_parent"
+            		android:layout_height="fill_parent"
+            		android:text=""/>
+            	<ImageView 
+                	android:id="@+id/imgToShow_inSearchAct"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:visibility="gone"
+                	android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+            
+        </ScrollView>
+        
+        <!--  
+        <Button 
+            android:id="@+id/searchItemBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dip"
+            android:visibility="gone"
+            android:text="查看图片"/>
+        
+        <Button 
+            android:id="@+id/videoWatchBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dip"
+            android:visibility="gone"
+            android:text="查看视频"/>
+        
+        -->
+        <Button 
+            android:id="@+id/searchItemBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:text="查询条目"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
+

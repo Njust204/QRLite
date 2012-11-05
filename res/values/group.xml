@@ -1,0 +1,11 @@
+<resources>
+    
+     <string-array name="group_lables">
+        <item>闭锁装置</item>
+        <item>半自动装置</item>
+        <item>击发装置</item>
+        <item>保险装置</item>
+        <item>挡弹装置</item>
+    </string-array>
+    
+</resources>

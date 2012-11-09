@@ -13,8 +13,43 @@ import android.widget.TextView;
 
 public class ItemExpandAdapter extends BaseExpandableListAdapter{
 
+	/*
+	第一篇总论
+	第一章  概述
+	第二章  自行火炮大件分解结合
+	  第一节  武器大件分解结合
+	  第二节  底盘大件分解结合
+	第二篇武器部分
+	第三章炮身与炮闩
+         第一节炮身
+         第二节炮闩
+         （一）闭锁装置
+         （二）半自动装置
+	  （三）击发装置
+	  （四）保险装置
+	  （五）挡弹装置
+	 第四章  半自动装坟机构
+	第五章  摇架和反后坐装
+	第六章  托架和平衡机
+	第七章  方向装置和高低装置
+	第八章  瞄准装置
+	第九章炮塔
+	第十章炮弹构造
+	第十一章附件
+	第三篇底盘部分
+	第四篇电气部分
+	第五篇自行火炮的勤务
+
+
+
+*/
 	// 组名称  
-    private String[] group = new String[] { "闭锁装置", "半自动装置", "击发装置", "保险装置", "挡弹装置" };  
+    private String[] group = new String[] { "第一篇总论","  第一章  概述","  第二章  自行火炮大件分解结合", "   第一节  武器大件分解结合","   第二节  底盘大件分解结合",
+    		"第二篇武器部分","  第三章炮身与炮闩","   第一节炮身","   第二节炮闩","    （一）闭锁装置","    （二）半自动装置","    （三）击发装置","    （四）保险装置","    （五）挡弹装置",
+    		"  第四章  半自动装坟机构","  第五章  摇架和反后坐装","  第六章  托架和平衡机","  第七章  方向装置和高低装置","  第八章  瞄准装置","  第九章炮塔","  第十章炮弹构造","  第十一章附件",
+    		"第三篇底盘部分",
+    		"第四篇电气部分",
+    		"第五篇自行火炮的勤务"};  
     
     private List<String> s1 = null;
     private List<String> s2 = null;
@@ -38,19 +73,19 @@ public class ItemExpandAdapter extends BaseExpandableListAdapter{
 		
 		String result = null;
 		switch (groupPosition) {
-		case 0:
+		case 9:
 			result = s1.get(childPosition);
 			break;
-		case 1:
+		case 10:
 			result = s2.get(childPosition);
 			break;
-		case 2:
+		case 11:
 			result = s3.get(childPosition);
 			break;
-		case 3:
+		case 12:
 			result = s4.get(childPosition);
 			break;
-		case 4:
+		case 13:
 			result = s5.get(childPosition);
 			break;
 		}
@@ -85,19 +120,19 @@ public class ItemExpandAdapter extends BaseExpandableListAdapter{
 	public int getChildrenCount(int groupPosition) {
 		int result = 0 ;
 		switch (groupPosition) {
-		case 0:
+		case 9:
 			result = s1.size();
 			break;
-		case 1:
+		case 10:
 			result = s2.size();
 			break;
-		case 2:
+		case 11:
 			result = s3.size();
 			break;
-		case 3:
+		case 12:
 			result = s4.size();
 			break;
-		case 4:
+		case 13:
 			result = s5.size();
 			break;
 		}

@@ -120,19 +120,19 @@ public class AllActivity extends Activity {
 			//子项被选中
 //			Toast.makeText(AllActivity.this, "组"+groupPosition+" 子"+childPosition, Toast.LENGTH_SHORT).show();
 			switch (groupPosition) {
-			case 0:
+			case 9:
 				clickItemName = s1.get(childPosition);
 				break;
-			case 1:
+			case 10:
 				clickItemName = s2.get(childPosition);
 				break;
-			case 2:
+			case 11:
 				clickItemName = s3.get(childPosition);
 				break;
-			case 3:
+			case 12:
 				clickItemName = s4.get(childPosition);
 				break;
-			case 4:
+			case 13:
 				clickItemName = s5.get(childPosition);
 				break;
 			}

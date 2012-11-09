@@ -45,7 +45,6 @@ public class MainActivity extends Activity {
 	        mainFinishBtn.setOnClickListener(mainBtnListener);
 	        
 	        DataHolder.dtManager = new DataManager(this);
-	        
 	    }
 	 
 	 	@Override  

@@ -26,11 +26,11 @@ public class DataManager {
 	/**
 	 * add
 	 */
-	public int addItem(String key, String value, String groupname, String img, String video) {
+	public int addItem(String key, String value, String groupname, String img) {
 
 		if (searchItem(key) == null) {
-			db.execSQL("INSERT INTO items (name,info,groupname,img,video) VALUES(?, ?,?,?,?)", new String[] { key, value,
-					groupname, img, video });
+			db.execSQL("INSERT INTO items (name,info,groupname,img) VALUES(?, ?, ?, ?)", new String[] { key, value,
+					groupname, img});
 			return 1;
 		}
 		return 0;
@@ -165,6 +165,7 @@ public class DataManager {
 			return null;
 		}
 	}
+	
 	/**
 	 * close database
 	 */

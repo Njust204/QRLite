@@ -44,7 +44,7 @@ public class AddActivity extends Activity {
 			String valueString = valueEditText.getText().toString();
 			//TODO ：添加条目进数据库，注意是否已存在key值情况，以及两个String值不能为空，成功后告诉UI
 			if(!keyString.equals("")  && !valueString.equals("") && keyString.length()<50 && !groupName.equals("")){
-				if( DataHolder.dtManager.addItem( keyString, valueString,groupName,null,null) == 1){
+				if( DataHolder.dtManager.addItem( keyString, valueString,groupName,null) == 1){
 					Toast.makeText(AddActivity.this, "添加成功", Toast.LENGTH_SHORT).show();
 					AddActivity.this.keyEditText.setText("");
 					AddActivity.this.valueEditText.setText("");
